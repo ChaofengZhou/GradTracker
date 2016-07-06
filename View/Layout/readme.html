@@ -1,0 +1,68 @@
+<!-- Author: Chaofeng Zhou, date: 2/1/2016 -->
+<!-- This is the readme html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Grad Tracker</title>
+  <link rel="icon" type="image/png" href="/Projects/asset/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/Projects/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/Projects/css/v1.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href='/Projects/Grad_Progress/Index/index.php'>Grad Tracker</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class='container vertical-center'>
+    <div class='jumbotron front_page'>
+      <div class='readme-title'>Summary</div>
+        <div class="card-content readme-content">
+          <p>The project is the seventh assignment for Grad Progress.</p>
+          <p>My Github repository is at <a href="https://github.com/uofu-cs4540/854122">https://github.com/uofu-cs4540/854122</a>.</p>
+          <p>This phase of project is to utilize AJAX and Highcharts to illustrate student statuses and faculty advisory information. In this assignment I have efficiently and sufficiently used the functionalities AJAX and Highcharts provide us. I use AJAX to send and receive chart requests and returned data. I think my works for this assignment deserves "superior". The following section has detailed descriptions about my assignment.</p>
+          <p>The DGS username: thisIsDGS; password: 12345678.</p>
+        </div>
+    
+        <div class='readme-title'>AJAX and Highcharts Deployment</div>
+        <div class="card-content readme-content">
+          <p>I have created 6 charts in 4 different types which covers all charts from the requirement and meets the expectation for "superior work". These types are column, bar, line and bar. I utilize a type of chart specifically according to the data type. For instance, I use bar chart for "Current GPAs of All Students" because we will have hundreds of student and it is better to set students on the y-axis, which is bar chart's advantage.</p>
+          <p>For all charts, I fetch data from the database with specific queries and let the backend server send the data back in JSON. So, all chart data are dealt with AJAX.</p>
+          <p>I followed the AJAX and charting examples Jim provides us. I used a select input for users to choose a chart to show. As the user confirm an option. The front page will send a AJAX post request to my server, and then the server fetch data according to the request number and send back in JSON format.</p>
+          <p>By using AJAX, the DGS don't need to refresh the overview page to load different charts. This enhances user's experience and make DGS's work more efficient. </p>
+          <p>By using Highchart, the beautiful and useful chart library, the DGS can have very intuitive views upon students' and advisors' statutues. Also, since all charts are set in one overview page, the DGS can have very convenient and direct access to monitor students.</p>
+          <p>Therefore, the combination of AJAX and Highcharts indeed improves DGS's efficiency and productivity quite decently.</p>
+        </div>
+
+        <div class='readme-title'>Attributions</div>
+        <div class="card-content readme-content">
+          <p>Highcharts, Jim's code and Stackoverflow
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='footer'>
+    <div class='footer-text'>
+      <a class="footer-link" href="/">Home</a>
+      <p class='copyright'>Chaofeng Zhou - All Rights Reserved.</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !Controller
+RewriteCond %{REQUEST_URI} !Assets
+RewriteRule ^(.*)$ Controller/$1 [L]
